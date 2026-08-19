@@ -38,23 +38,6 @@
 
 ---
 
-## 🚀 Getting Started
-
-To run locally:
-```bash
-# Clone the repository
-git clone https://github.com/aksihol/Akash-Resume.git
-
-# Navigate into the project folder
-cd Akash-Resume
-
-# Start a local static server
-python3 -m http.server 8000
-```
-Then open `http://localhost:8000/` in your browser.
-
----
-
 ## 📬 Contact
 
 - **Email**: [aksihol216@gmail.com](mailto:aksihol216@gmail.com)
