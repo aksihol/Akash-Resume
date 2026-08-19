@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash_Sihol_QA_Resume</title>
+  <meta name="description" content="Resume of Akash Sihol - Senior Quality Analyst & QA Lead with 7+ years of experience in Manual and Automation Testing across Web, Mobile & E-commerce platforms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #121824;
+      --secondary: #475569;
+      --accent: #b47d24;
+      --accent-dark: #8c5d10;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--primary);
+      line-height: 1.55;
+      padding: 2rem 1rem 4rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Floating Toolbar */
+    .resume-toolbar {
+      position: fixed;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: rgba(18, 24, 36, 0.92);
+      backdrop-filter: blur(12px);
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .toolbar-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+    }
+    .toolbar-btn--primary {
+      background: #d4a359;
+      color: #070a10;
+    }
+    .toolbar-btn--primary:hover {
+      background: #e8c68a;
+      transform: translateY(-1px);
+    }
+    .toolbar-btn--secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+    .toolbar-btn--secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Resume Container */
+    .resume-wrapper {
+      max-width: 860px;
+      margin: 3.5rem auto 0;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--border);
+      padding: 3.25rem 3.5rem;
+    }
+
+    /* Header */
+    .resume-header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .name-title-group h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--primary);
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+    .name-title-group h2 {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 0.35rem;
+      letter-spacing: 0.02em;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.35rem;
+      font-size: 0.875rem;
+      color: var(--secondary);
+      font-weight: 500;
+    }
+    .contact-info a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-info a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Section Styles */
+    .resume-section {
+      margin-bottom: 1.75rem;
+    }
+    .section-heading {
+      font-size: 0.9375rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 0.35rem;
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .summary-p {
+      font-size: 0.9375rem;
+      color: #334155;
+      line-height: 1.65;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Skills Grid */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+    .skills-table tr {
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .skills-table td {
+      padding: 0.45rem 0.25rem;
+      vertical-align: top;
+    }
+    .skills-category {
+      font-weight: 700;
+      color: var(--primary);
+      width: 28%;
+    }
+    .skills-content {
+      color: #334155;
+    }
+
+    /* Experience Items */
+    .experience-item {
+      margin-bottom: 1.35rem;
+    }
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.2rem;
+    }
+    .role-company {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .company-name {
+      color: var(--accent);
+    }
+    .project-name-badge {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 0.35rem;
+    }
+    .date-location {
+      font-size: 0.8125rem;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      color: #64748b;
+    }
+    .project-overview {
+      font-size: 0.875rem;
+      font-style: italic;
+      color: #475569;
+      margin-bottom: 0.4rem;
+    }
+    .duty-list {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      font-size: 0.875rem;
+      color: #334155;
+      line-height: 1.55;
+    }
+    .duty-list li {
+      margin-bottom: 0.25rem;
+    }
+
+    /* Certifications & Education */
+    .cert-edu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .bullet-list {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      font-size: 0.875rem;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    /* PRINT STYLES FOR PDF */
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+        padding: 0;
+      }
+      .resume-toolbar {
+        display: none !important;
+      }
+      .resume-wrapper {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+        border-radius: 0;
+      }
+      .resume-header {
+        border-bottom-color: #000000;
+      }
+      .name-title-group h1 {
+        color: #000000;
+      }
+      .name-title-group h2 {
+        color: #7a540d;
+      }
+      .section-heading {
+        border-bottom-color: #cbd5e1;
+        break-after: avoid;
+      }
+      .experience-item {
+        break-inside: avoid;
+        margin-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .resume-wrapper {
+        padding: 2rem 1.5rem;
+      }
+      .resume-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .contact-info {
+        align-items: flex-start;
+      }
+      .cert-edu-grid {
+        grid-template-columns: 1fr;
+      }
+      .skills-category {
+        width: 35%;
+      }
+    }
+    /* =====================================================================
+       Resume layout refinement
+       ===================================================================== */
+    :root {
+      --resume-ink: #182232;
+      --resume-muted: #59677a;
+      --resume-soft: #f5f7fa;
+      --resume-line: #dbe2ea;
+      --resume-gold: #b47d24;
+    }
+
+    body {
+      background: #eef2f6;
+      padding: 5.25rem 1rem 4rem;
+      color: var(--resume-ink);
+    }
+
+    .resume-toolbar {
+      top: 0.75rem;
+      padding: 0.42rem 0.55rem;
+      gap: 0.35rem;
+      border-radius: 999px;
+    }
+
+    .toolbar-btn {
+      min-height: 2.1rem;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.72rem;
+      white-space: nowrap;
+    }
+
+    .resume-wrapper {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 3.25rem 4rem 3.5rem;
+      border-radius: 14px;
+      box-shadow: 0 12px 34px rgba(26, 39, 58, 0.08), 0 0 0 1px var(--resume-line);
+    }
+
+    .resume-header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 2.5rem;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--resume-ink);
+    }
+
+    .name-title-group h1 {
+      font-size: clamp(2rem, 4vw, 2.65rem);
+      color: var(--resume-ink);
+      letter-spacing: -0.045em;
+    }
+
+    .name-title-group h2 {
+      margin-top: 0.45rem;
+      font-size: clamp(0.72rem, 1.4vw, 1rem);
+      line-height: 1.35;
+      letter-spacing: 0;
+      white-space: nowrap;
+      color: var(--resume-gold);
+    }
+
+    .contact-info {
+      align-items: flex-start;
+      gap: 0.48rem;
+      min-width: 205px;
+      font-size: 0.75rem;
+      line-height: 1.35;
+      color: var(--resume-muted);
+    }
+
+    .contact-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .contact-icon {
+      width: 1rem;
+      flex: 0 0 1rem;
+      color: var(--resume-gold);
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .contact-info a {
+      color: var(--resume-ink);
+    }
+
+    .resume-section {
+      margin-bottom: 2.1rem;
+    }
+
+    .section-heading {
+      margin-bottom: 0.95rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid var(--resume-line);
+      color: var(--resume-ink);
+      font-size: 0.78rem;
+      letter-spacing: 0.13em;
+    }
+
+    .summary-p {
+      margin-bottom: 0.65rem;
+      color: var(--resume-muted);
+      font-size: 0.86rem;
+      line-height: 1.72;
+    }
+
+    .competency-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .competency-list span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2rem;
+      padding: 0.38rem 0.65rem;
+      border: 1px solid var(--resume-line);
+      border-radius: 5px;
+      background: var(--resume-soft);
+      color: #3e4c60;
+      font-size: 0.72rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .skills-table {
+      table-layout: fixed;
+      margin-bottom: 0;
+      font-size: 0.78rem;
+    }
+
+    .skills-table tr {
+      border-bottom: 1px solid #edf1f5;
+    }
+
+    .skills-table tr:last-child {
+      border-bottom: 0;
+    }
+
+    .skills-table td {
+      padding: 0.62rem 0.35rem;
+      line-height: 1.5;
+    }
+
+    .skills-category {
+      width: 25%;
+      color: var(--resume-ink);
+      font-size: 0.72rem;
+      line-height: 1.35;
+    }
+
+    .skills-content {
+      color: var(--resume-muted);
+    }
+
+    .experience-item {
+      margin-bottom: 1rem;
+      padding: 1.2rem 1.35rem 1.25rem;
+      border: 1px solid var(--resume-line);
+      border-left: 3px solid var(--resume-gold);
+      border-radius: 9px;
+      background: #fbfcfe;
+    }
+
+    .experience-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .experience-header {
+      gap: 1rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .role-company {
+      color: var(--resume-ink);
+      font-size: 0.86rem;
+      line-height: 1.45;
+    }
+
+    .company-name {
+      color: var(--resume-gold);
+    }
+
+    .date-location {
+      flex: 0 0 auto;
+      color: #6b7788;
+      font-size: 0.68rem;
+      white-space: nowrap;
+    }
+
+    .project-name-badge {
+      display: inline-flex;
+      margin-bottom: 0.55rem;
+      padding: 0.27rem 0.55rem;
+      border-radius: 4px;
+      background: #f1eadc;
+      color: #765216;
+      font-size: 0.72rem;
+      line-height: 1.3;
+    }
+
+    .project-overview {
+      margin-bottom: 0.55rem;
+      color: #667487;
+      font-size: 0.76rem;
+      line-height: 1.55;
+    }
+
+    .duty-list,
+    .bullet-list {
+      color: #465468;
+      font-size: 0.76rem;
+      line-height: 1.55;
+    }
+
+    .duty-list {
+      padding-left: 1.1rem;
+    }
+
+    .duty-list li,
+    .bullet-list li {
+      margin-bottom: 0.28rem;
+    }
+
+    .cert-edu-grid {
+      gap: 1.25rem;
+    }
+
+    .cert-edu-grid > div {
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--resume-line);
+      border-radius: 8px;
+      background: var(--resume-soft);
+    }
+
+    .cert-edu-grid .section-heading {
+      margin-bottom: 0.7rem;
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .resume-wrapper {
+        max-width: none;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      .resume-header {
+        border-bottom-color: #111827;
+      }
+
+      .experience-item,
+      .cert-edu-grid > div {
+        background: #ffffff;
+        break-inside: avoid;
+      }
+
+      .competency-list span,
+      .project-name-badge {
+        background: #ffffff;
+      }
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 4.75rem 0.65rem 2rem;
+      }
+
+      .resume-toolbar {
+        width: max-content;
+        max-width: calc(100% - 1.3rem);
+      }
+
+      .toolbar-btn {
+        padding-inline: 0.7rem;
+        font-size: 0.66rem;
+      }
+
+      .resume-wrapper {
+        padding: 1.75rem 1.15rem 2.25rem;
+        border-radius: 10px;
+      }
+
+      .resume-header {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 1.15rem;
+        margin-bottom: 1.65rem;
+      }
+
+      .name-title-group h1 {
+        font-size: 2rem;
+      }
+
+      .name-title-group h2 {
+        font-size: 0.7rem;
+        letter-spacing: -0.025em;
+      }
+
+      .contact-info {
+        min-width: 0;
+        font-size: 0.72rem;
+      }
+
+      .resume-section {
+        margin-bottom: 1.65rem;
+      }
+
+      .summary-p {
+        font-size: 0.8rem;
+        line-height: 1.65;
+      }
+
+      .competency-list {
+        gap: 0.4rem;
+      }
+
+      .competency-list span {
+        padding: 0.34rem 0.5rem;
+        font-size: 0.66rem;
+      }
+
+      .skills-table,
+      .skills-table tbody,
+      .skills-table tr,
+      .skills-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .skills-table tr {
+        padding: 0.55rem 0;
+      }
+
+      .skills-table td {
+        padding: 0.1rem 0;
+      }
+
+      .skills-category {
+        font-size: 0.7rem;
+      }
+
+      .skills-content {
+        font-size: 0.76rem;
+      }
+
+      .experience-item {
+        padding: 1rem 0.9rem 1.05rem;
+      }
+
+      .experience-header {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+      }
+
+      .date-location {
+        font-size: 0.64rem;
+      }
+
+      .role-company {
+        font-size: 0.8rem;
+      }
+
+      .project-overview,
+      .duty-list,
+      .bullet-list {
+        font-size: 0.72rem;
+      }
+
+      .cert-edu-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .name-title-group h1 {
+        font-size: 1.75rem;
+      }
+
+      .name-title-group h2 {
+        font-size: 0.61rem;
+      }
+
+      .toolbar-btn {
+        padding-inline: 0.55rem;
+        font-size: 0.6rem;
+      }
+    }
+
+    .resume-awards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .resume-award-item {
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--resume-line);
+      border-left: 3px solid var(--resume-gold);
+      border-radius: 7px;
+      background: var(--resume-soft);
+    }
+
+    .resume-award-item h4 {
+      color: var(--resume-ink);
+      font-size: 0.75rem;
+      line-height: 1.35;
+    }
+
+    .resume-award-item span {
+      display: block;
+      margin-top: 0.3rem;
+      color: var(--resume-gold);
+      font-size: 0.62rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .resume-award-item p {
+      margin-top: 0.45rem;
+      color: var(--resume-muted);
+      font-size: 0.68rem;
+      line-height: 1.5;
+    }
+
+    .resume-cert-link {
+      display: inline-block;
+      margin-top: 0.25rem;
+      color: var(--resume-gold);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .resume-cert-link:hover {
+      text-decoration: underline;
+    }
+
+    .resume-certification-item {
+      line-height: 1.45;
+    }
+
+    .resume-certification-item > strong {
+      display: block;
+      color: var(--resume-ink);
+    }
+
+    .certification-subtitle,
+    .certification-meta {
+      display: block;
+      margin-top: 0.2rem;
+      color: var(--resume-muted);
+      font-size: 0.68rem;
+    }
+
+    .certification-meta b {
+      color: var(--resume-ink);
+      font-weight: 700;
+    }
+
+    @media print {
+      .resume-award-item {
+        background: #ffffff;
+      }
+
+      .resume-cert-link {
+        color: #111827;
+        text-decoration: none;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .resume-awards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Navigation Toolbar -->
+  <div class="resume-toolbar">
+    <a href="./index.html" class="toolbar-btn toolbar-btn--secondary">← Portfolio</a>
+    <button onclick="document.title='Akash_Sihol_QA_Resume'; window.print()" class="toolbar-btn toolbar-btn--primary">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Print / Download PDF
+    </button>
+  </div>
+
+  <main class="resume-wrapper">
+    <!-- Header -->
+    <header class="resume-header">
+      <div class="name-title-group">
+        <h1>Akash Sihol</h1>
+        <h2>Senior Quality Analyst | QA Lead | Manual &amp; Automation Testing</h2>
+      </div>
+      <div class="contact-info">
+        <span class="contact-line"><span class="contact-icon" aria-hidden="true">⌖</span><span>Kangra, Himachal Pradesh, India</span></span>
+        <span class="contact-line"><span class="contact-icon" aria-hidden="true">☎</span><a href="tel:+919380948319">+91-9380948319</a></span>
+        <span class="contact-line"><span class="contact-icon" aria-hidden="true">✉</span><a href="mailto:aksihol216@gmail.com">aksihol216@gmail.com</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="resume-section">
+      <h3 class="section-heading">Professional Summary</h3>
+      <p class="summary-p">
+        Software Quality Analyst with <strong>7+ years of experience</strong> in Manual and Automation Testing, specializing in software quality assurance, test planning, defect management, and Agile methodologies. Experienced in leading QA teams, designing and executing comprehensive test strategies, and collaborating with cross-functional teams to deliver high-quality software solutions.
+      </p>
+      <p class="summary-p">
+        Strong hands-on experience across Functional, Integration, Regression, Smoke, Sanity, Retesting, UAT, UI/UX, API, Database, Cross-Browser, Web, and Mobile Testing. Proficient in modern automation and testing tools including Playwright, Cypress, Selenium, Postman, BrowserStack, JIRA, Confluence, and TestLink. Experienced in analyzing FRD/BRD requirements, preparing test scenarios and test cases, managing defects, conducting regression cycles, and communicating testing status and risks to stakeholders.
+      </p>
+    </section>
+
+    <!-- Core Competencies -->
+    <section class="resume-section">
+      <h3 class="section-heading">Core Competencies</h3>
+      <div class="competency-list" aria-label="Core competencies">
+        <span>Manual &amp; Automation Testing</span>
+        <span>Test Planning &amp; Strategy</span>
+        <span>Test Scenario &amp; Test Case Design</span>
+        <span>Functional Testing</span>
+        <span>System &amp; Integration Testing</span>
+        <span>Regression, Smoke &amp; Sanity Testing</span>
+        <span>Retesting &amp; UAT</span>
+        <span>End-to-End Testing</span>
+        <span>API &amp; Database Testing</span>
+        <span>UI/UX &amp; Cross-Browser Testing</span>
+        <span>Web &amp; Mobile Applications</span>
+        <span>Defect Management</span>
+        <span>FRD/BRD Requirement Analysis</span>
+        <span>Agile / Scrum Methodologies</span>
+        <span>QA Team Leadership</span>
+        <span>Stakeholder Communication</span>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="resume-section">
+      <h3 class="section-heading">Technical Skills</h3>
+      <table class="skills-table">
+        <tr>
+          <td class="skills-category">Testing Methodologies</td>
+          <td class="skills-content">Agile, Functional Testing, System Testing, System Integration Testing (SIT), UAT, Smoke Testing, Sanity Testing, Retesting, Regression Testing, End-to-End Testing</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Automation Testing</td>
+          <td class="skills-content">Playwright, Cypress, Selenium WebDriver</td>
+        </tr>
+        <tr>
+          <td class="skills-category">API Testing</td>
+          <td class="skills-content">Postman, RESTful APIs</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Bug Tracking &amp; Management</td>
+          <td class="skills-content">JIRA, MS Excel, TestLink, Confluence</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Cross-Browser &amp; Performance</td>
+          <td class="skills-content">BrowserStack, Google Lighthouse, Browser DevTools &amp; Console Debugging</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Database &amp; Platforms</td>
+          <td class="skills-content">SQL, Shopify, Spryker Framework, Web &amp; Mobile (iOS &amp; Android)</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="resume-section">
+      <h3 class="section-heading">Professional Experience</h3>
+
+      <!-- 1. HINCOL -->
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="role-company">Senior Quality Analyst – Web &amp; Mobile · <span class="company-name">Publicis Groupe</span></div>
+          <div class="date-location">October 2025 – Present</div>
+        </div>
+        <div class="project-name-badge">Project: HINCOL (Web &amp; Mobile Application)</div>
+        <p class="project-overview">HINCOL is an enterprise web and mobile platform for a leading bitumen derivatives manufacturer, streamlining road construction and maintenance operations.</p>
+        <ul class="duty-list">
+          <li>Reviewed business and functional requirements (FRD/BRD) to identify testing scope and mitigate potential risks early in the SDLC.</li>
+          <li>Designed, developed, and executed comprehensive test scenarios and test cases for complex multi-tier workflows.</li>
+          <li>Performed functional, regression, smoke, sanity, and integration testing across web and mobile platforms.</li>
+          <li>Conducted cross-platform native testing on iOS and Android devices, verifying responsiveness and device compatibility.</li>
+          <li>Reported, tracked, and managed defects through the complete defect lifecycle using JIRA.</li>
+          <li>Collaborated closely with developers, product managers, and business stakeholders to ensure timely bug triage and resolution.</li>
+          <li>Actively participated in Agile sprint planning, daily stand-ups, and retrospectives, driving continuous QA improvements.</li>
+        </ul>
+      </div>
+
+      <!-- 2. Citroen -->
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="role-company">Senior QA · <span class="company-name">Publicis Groupe</span></div>
+          <div class="date-location">July 2024 – April 2026</div>
+        </div>
+        <div class="project-name-badge">Project: Citroën – Automobile Digital Platform</div>
+        <p class="project-overview">Digital customer experience platform for Citroën India, providing vehicle booking, price comparison, digital showroom, service scheduling, deals, and dealer locator.</p>
+        <ul class="duty-list">
+          <li>Conducted comprehensive testing to ensure automotive platform quality met strict corporate brand and functional benchmarks.</li>
+          <li>Performed Functional, Retesting, Regression, Cross-Browser, and End-to-End Testing across responsive web interfaces.</li>
+          <li>Collaborated with designers and front-end engineers to ensure pixel-perfect UI/UX implementation and branding standards.</li>
+          <li>Designed and maintained detailed test scenarios based on business logic, dealer workflows, and booking engines.</li>
+          <li>Communicated testing progress, blockers, release risks, and mitigation strategies to senior stakeholders.</li>
+          <li>Executed extensive regression cycles prior to every release, ensuring zero critical defects in production.</li>
+        </ul>
+      </div>
+
+      <!-- 3. Redington -->
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="role-company">QA Team Lead · <span class="company-name">Publicis Groupe</span></div>
+          <div class="date-location">November 2022 – December 2023</div>
+        </div>
+        <div class="project-name-badge">Project: Redington – Enterprise B2B E-Commerce Platform</div>
+        <p class="project-overview">Advanced B2B e-commerce platform incorporating features such as Advanced RFQ, ORC, Stock Allocation, and high-concurrency order processing.</p>
+        <ul class="duty-list">
+          <li>Led QA activities for the e-commerce platform and defined the overall test strategy, test plans, and release governance.</li>
+          <li>Mentored QA engineers, conducted test case reviews, and ensured optimal test coverage across critical commercial workflows.</li>
+          <li>Conducted functional, integration, regression, smoke, sanity, and API testing using Postman and SQL.</li>
+          <li>Managed defect triage, prioritization, and root-cause analysis with backend developers and business analysts.</li>
+          <li>Provided weekly QA status reports, test execution metrics, and release sign-offs to executive leadership.</li>
+        </ul>
+      </div>
+
+      <!-- 4. Freight Club -->
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="role-company">Senior Software Test Engineer · <span class="company-name">QualiteSoft</span></div>
+          <div class="date-location">May 2019 – December 2022</div>
+        </div>
+        <div class="project-name-badge">Project: Freight Club – Logistics Management Platform</div>
+        <p class="project-overview">Enterprise logistics management platform helping retailers automate freight booking, rate comparison, and shipment tracking.</p>
+        <ul class="duty-list">
+          <li>Authored test procedures, test scenarios, and comprehensive test cases using Black Box testing techniques.</li>
+          <li>Developed automated test cases using Selenium WebDriver and custom element locators to accelerate regression execution.</li>
+          <li>Executed automated test suites, analyzed test failures, and reported defects through JIRA.</li>
+          <li>Conducted manual and automated testing for critical logistics rate engines, routing modules, and reporting tools.</li>
+          <li>Prepared daily and weekly test execution summary reports for project leads and stakeholders.</li>
+        </ul>
+      </div>
+
+      <!-- 5. Cymax -->
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="role-company">Software Test Engineer · <span class="company-name">QualiteSoft</span></div>
+          <div class="date-location">May 2019 – December 2022</div>
+        </div>
+        <div class="project-name-badge">Project: Cymax – Online Retail E-Commerce Platform</div>
+        <p class="project-overview">Online furniture and home decor retailer serving millions of customers across the United States and Canada.</p>
+        <ul class="duty-list">
+          <li>Created and maintained test scenarios and execution checklists for checkout, payment gateways, and catalog filters.</li>
+          <li>Automated key customer journeys with Selenium WebDriver and integrated scripts into regression test runs.</li>
+          <li>Identified, logged, and tracked functional defects in JIRA; verified bug fixes with thorough retesting.</li>
+          <li>Collaborated closely with cross-functional development teams to deliver stable, high-quality e-commerce releases.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications & Education -->
+    <section class="resume-section">
+      <div class="cert-edu-grid">
+        <div>
+          <h3 class="section-heading">Certifications</h3>
+          <ul class="bullet-list">
+            <li><strong>Selenium with Java</strong> — Automation Testing Certification</li>
+            <li class="resume-certification-item">
+              <strong>Cypress Automation Testing</strong>
+              <span class="certification-subtitle">Udemy Certificate of Completion · February 2024 · 17 total hours</span>
+              <span class="certification-meta"><b>Certificate No.</b> UC-eb14920b-ffe2-4d79-8024-497133105253</span>
+              <span class="certification-meta"><b>Reference No.</b> 0004</span>
+              <a class="resume-cert-link" href="./assets/cypress-certificate.jpeg" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="section-heading">Education</h3>
+          <ul class="bullet-list">
+            <li><strong>Bachelor of Technology (B.Tech.)</strong> — Electronics and Communication Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="resume-section awards-resume-section">
+      <h3 class="section-heading">Awards &amp; Recognition</h3>
+      <div class="resume-awards-grid">
+        <article class="resume-award-item">
+          <div>
+            <h4>WOW@WORK — Collective Impact Award</h4>
+            <span>Publicis Groupe</span>
+          </div>
+          <p>Recognized for being part of a team that delivered outstanding results through collaboration.</p>
+        </article>
+        <article class="resume-award-item">
+          <div>
+            <h4>Employee of the Month</h4>
+            <span>Publicis Groupe · October 2024</span>
+          </div>
+          <p>Recognized through the R&amp;R 2024 program for consistent contribution and performance.</p>
+        </article>
+        <article class="resume-award-item">
+          <div>
+            <h4>Excellence Premier League</h4>
+            <span>Publicis Groupe · Q2 2023</span>
+          </div>
+          <p>Certificate of Appreciation for securing a place in the Excellence Premier League.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="resume-section">
+      <h3 class="section-heading">Professional Highlights</h3>
+      <ul class="bullet-list">
+        <li><strong>7+ years of experience</strong> in Software Quality Assurance and Quality Engineering.</li>
+        <li>Strong combination of <strong>Manual and Automation Testing</strong> expertise (Playwright, Cypress, Selenium, Postman).</li>
+        <li>Extensive domain leadership across <strong>E-Commerce, Automotive, Logistics, Web &amp; Mobile</strong> applications.</li>
+        <li>Proven track record in <strong>leading QA teams</strong>, driving quality culture, and ensuring defect-free deployments.</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
