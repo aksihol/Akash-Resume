@@ -3426,7 +3426,8 @@ html[data-theme="light"] .site-footer .footer-bottom-bar {
   }
 
   .contact-card-value {
-    word-break: break-all;
+    word-break: normal;
+    overflow-wrap: normal;
   }
 }
 
@@ -3619,4 +3620,20 @@ html[data-theme="light"] .award-image-link {
 
 html[data-theme="light"] .cert-verification a {
   color: #8c5d10;
+}
+
+/* Keep portfolio words intact on mobile and wrap only at natural spaces. */
+#main-content,
+#main-content * {
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+  line-break: auto;
+}
+
+#main-content .cert-verification {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
 }

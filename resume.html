@@ -797,6 +797,22 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* Keep normal words intact on narrow screens. */
+    .resume-wrapper,
+    .resume-wrapper * {
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+      line-break: auto;
+    }
+
+    .resume-wrapper .certification-meta {
+      max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: thin;
+    }
   </style>
 </head>
 <body>
