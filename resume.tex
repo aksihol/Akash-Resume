@@ -1,7 +1,7 @@
-\documentclass[letterpaper,9.5pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=0.45in]{geometry}
+\usepackage[margin=0.55in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -9,86 +9,68 @@
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 
-% Suppress page numbering for strict 1-page layout
+% Clean 1-page layout without page numbers
 \pagestyle{empty}
 
-% Section formatting with clean horizontal rule matching reference
-\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\vspace{1.5pt}\hrule height 0.6pt]
-\titlespacing*{\section}{0pt}{5pt}{3pt}
+% Section title formatting with clean underline matching reference
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\vspace{2pt}\hrule height 0.6pt]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
 
-% Tight list spacing matching reference
-\setlist[itemize]{leftmargin=1.25em, itemsep=1.2pt, topsep=1.5pt, parsep=0pt, partopsep=0pt}
+% Comfortable list spacing with natural breathing room
+\setlist[itemize]{leftmargin=1.35em, itemsep=2.5pt, topsep=2.5pt, parsep=0pt, partopsep=0pt}
 
 \begin{document}
 
 % ==================== HEADER ====================
 \begin{center}
-    {\fontsize{20pt}{24pt}\selectfont \textbf{Akash Sihol}}\\[3pt]
+    {\fontsize{20pt}{24pt}\selectfont \textbf{Akash Sihol}}\\[4pt]
     \small +91 9380948319 \ $|$ \ \href{mailto:aksihol216@gmail.com}{aksihol216@gmail.com} \ $|$ \ Kangra, Himachal Pradesh, India \ $|$ \ \href{https://aksihol.github.io}{Portfolio} \ $|$ \ \href{https://linkedin.com/in/}{LinkedIn}
 \end{center}
-\vspace{-6pt}
+\vspace{2pt}
 
 % ==================== TECHNICAL SKILLS ====================
 \section*{TECHNICAL SKILLS}
-\vspace{-1pt}
 \noindent
-\textbf{Testing Methodologies \& Types:} Functional, System Integration (SIT), UAT, Smoke \& Sanity, Regression, Retesting, Cross-Browser, Native Mobile QA, Black Box, E2E\\
-\textbf{Automation \& AI Tools:} AI Co-pilot (Test Authoring), Playwright, Cypress, Selenium WebDriver, TestLink, Charles Proxy\\
-\textbf{Mobile \& API Testing:} BrowserStack (Real iOS \& Android Devices), TestFlight, App Center, Postman (REST APIs), Chrome DevTools\\
-\textbf{Management, DB \& Platforms:} JIRA (Defect Lifecycle \& Bug Triage), Confluence, SQL (Data Integrity Verification), Spryker, Shopify, Lighthouse, MS Excel
-\vspace{-1pt}
+\textbf{Testing \& Methodologies:} Functional, SIT, UAT, Smoke \& Sanity, Regression, Retesting, Cross-Browser, Native Mobile QA, E2E\\
+\textbf{Automation \& AI Tools:} AI Co-pilot (Test Authoring), Playwright, Cypress, Selenium WebDriver, Postman (REST APIs), TestLink\\
+\textbf{Platforms \& Management:} JIRA (Defect Lifecycle \& Triage), BrowserStack (iOS \& Android), SQL, Spryker, Shopify, Lighthouse, DevTools
 
 % ==================== EXPERIENCE ====================
 \section*{EXPERIENCE}
 
 \noindent
 \textbf{Senior Quality Analyst \& QA Lead} $|$ Publicis Digital Experience (Publicis Groupe) \hfill Nov 2022 -- Present\\
-\textit{Gurugram / Hybrid, India}\\[2pt]
+\textit{Gurugram / Hybrid, India}\\[3pt]
 $\triangleright$ \textbf{Project: IFB — Smart Mobile App (iOS \& Android)} $|$ \textit{BrowserStack, AI Co-pilot, TestFlight, JIRA} \hfill \textbf{Aug 2026 -- Present}
 \begin{itemize}
-    \item Spearheaded native iOS \& Android mobile QA for connected IoT consumer app on BrowserStack real-device cloud, verifying telemetry, Bluetooth/WiFi sync, and device permissions across 40+ OS/device models.
-    \item Accelerated test case authoring by 40\% utilizing AI Co-pilot for edge cases; led weekly bug triage meetings with developers and PMs, cutting critical defect resolution turnaround by 30\%.
+    \item Spearheaded native iOS \& Android mobile QA for connected IoT consumer app on BrowserStack real-device cloud, verifying telemetry, offline sync, and device permissions across 40+ device models.
+    \item Accelerated test design velocity by 40\% utilizing AI Co-pilot for edge cases; led weekly bug triage meetings with engineering and product teams, shortening critical fix turnaround by 30\%.
 \end{itemize}
 
-\vspace{1.5pt}
+\vspace{5pt}
 \noindent
-$\triangleright$ \textbf{Project: HINCOL — Enterprise B2B Platform (Web \& Mobile)} $|$ \textit{Postman, JIRA, iOS, Android, Bitumen Logistics} \hfill \textbf{Wow@Work Award}
+$\triangleright$ \textbf{Project: HINCOL — Enterprise B2B Platform (Web \& Mobile)} $|$ \textit{Postman, JIRA, Android, iOS, Agile} \hfill \textbf{Wow@Work Award}
 \begin{itemize}
-    \item Formulated master test plans and executed multi-tier SIT, regression, and sanity suites for bitumen logistics and ERP modules, ensuring 99.8\% defect-free releases across production deployments.
-    \item Reviewed BRD/FRD requirements early in sprint cycles to eliminate scope ambiguity; conducted cross-platform native mobile testing with offline sync and field location tracking.
+    \item Formulated master test strategies and executed SIT, regression, and sanity suites for bitumen logistics and ERP modules, ensuring 99.8\% defect-free releases across production deployments.
+    \item Partnered with developers in Agile sprints to eliminate requirement ambiguities early via BRD/FRD reviews; validated native mobile field workflows with offline data sync.
 \end{itemize}
 
-\vspace{1.5pt}
+\vspace{5pt}
 \noindent
-$\triangleright$ \textbf{Project: Citro\"en — Automobile Digital Platform} $|$ \textit{BrowserStack, Postman, JIRA, DevTools, Lighthouse} \hfill \textbf{Employee of the Month}
+$\triangleright$ \textbf{Project: Citroën \& Redington Digital Platforms} $|$ \textit{Spryker, Shopify, Postman, SQL, JIRA, Lighthouse} \hfill \textbf{Excellence Award}
 \begin{itemize}
-    \item Directed functional, regression, and cross-browser testing for vehicle booking, 3D digital showroom, and dealer discovery across 100+ responsive viewport breakpoints.
-    \item Collaborated with UI/UX designers and frontend engineers to enforce strict brand compliance and performance KPIs, achieving zero production bugs during national campaigns.
+    \item Directed QA governance for Citroën vehicle booking portal and Redington high-concurrency B2B commerce engine (Advanced RFQ, stock allocation), preventing production leaks.
+    \item Validated RESTful APIs with Postman and executed complex SQL queries to guarantee transaction consistency, catalog pricing rules, and inventory reservation integrity.
 \end{itemize}
 
-\vspace{1.5pt}
-\noindent
-$\triangleright$ \textbf{Project: Redington — Enterprise B2B E-Commerce} $|$ \textit{Spryker, Shopify, Postman, SQL, JIRA} \hfill \textbf{Excellence Premier League}
-\begin{itemize}
-    \item Governed end-to-end QA delivery for high-throughput commercial platform, validating Advanced RFQ, ORC, dynamic bulk pricing, and stock allocation logic under high concurrent order placement.
-    \item Validated RESTful APIs with Postman and executed complex SQL queries to verify transaction consistency, pricing rules, and inventory reservation integrity.
-\end{itemize}
-
-\vspace{3pt}
+\vspace{7pt}
 \noindent
 \textbf{Senior Software Test Engineer} $|$ QualiteSoft Technologies \hfill May 2019 -- Dec 2022\\
-\textit{Noida, India}\\[2pt]
-$\triangleright$ \textbf{Project: Freight Club — Logistics Management Platform} $|$ \textit{Selenium WebDriver, Java, SQL, JIRA, TestLink}
+\textit{Noida, India}\\[3pt]
+$\triangleright$ \textbf{Project: Freight Club \& Cymax Platforms} $|$ \textit{Selenium WebDriver, Java, SQL, JIRA, Cross-Browser}
 \begin{itemize}
-    \item Engineered automated regression test suites using Selenium WebDriver with Java and custom element locators (XPath/CSS), shortening execution cycles by 45\% and eliminating critical rating bugs.
-    \item Conducted extensive Black Box, functional, and SQL database verification for multi-carrier logistics routing engines and automated rate quote generation.
-\end{itemize}
-
-\vspace{1.5pt}
-\noindent
-$\triangleright$ \textbf{Project: Cymax — Retail E-Commerce Platform} $|$ \textit{Selenium WebDriver, SQL, Cross-Browser, Payment Gateways, JIRA}
-\begin{itemize}
-    \item Executed full-lifecycle functional, regression, and checkout payment gateway testing across multi-browser combinations for a high-volume North American furniture retail website.
+    \item Engineered automated regression suites using Selenium WebDriver with Java and custom locators, cutting regression run cycles by 45\% across North American retail platforms.
+    \item Conducted full-lifecycle functional, payment gateway, and SQL database verification for logistics carrier rating engines and high-volume e-commerce checkout flows.
 \end{itemize}
 
 % ==================== EDUCATION ====================
@@ -100,9 +82,9 @@ Bachelor of Technology (B.Tech.) — Electronics and Communication Engineering \
 % ==================== CERTIFICATIONS ====================
 \section*{CERTIFICATIONS}
 \noindent
-Cypress Automation Testing — Udemy (Certificate: UC-eb14920b-ffe2-4d79-8024-497133105253) \hfill \href{https://aksihol.github.io}{\textit{Verify}}\\[1.5pt]
-Selenium with Java Automation Testing Certification — Certified Professional \hfill \href{https://aksihol.github.io}{\textit{Verify}}\\[1.5pt]
-WOW@WORK Collective Impact Award \& Employee of the Month (Oct 2024) — Publicis Groupe \hfill \href{https://aksihol.github.io}{\textit{View Award}}\\[1.5pt]
-Excellence Premier League Recognition (Q2 2023) — Publicis Groupe \hfill \href{https://aksihol.github.io}{\textit{View Award}}
+Cypress Automation Testing — Udemy (Certificate: UC-eb14920b-ffe2-4d79-8024-497133105253) \hfill \href{https://aksihol.github.io}{\textit{Verify}}\\[2pt]
+Selenium with Java Automation Testing Certification — Certified Professional \hfill \href{https://aksihol.github.io}{\textit{Verify}}\\[2pt]
+WOW@WORK Collective Impact Award \& Employee of the Month (Oct 2024) — Publicis Groupe \hfill \href{https://aksihol.github.io}{\textit{View Award}}\\[2pt]
+Excellence Premier League Award (Q2 2023) — Publicis Groupe \hfill \href{https://aksihol.github.io}{\textit{View Award}}
 
 \end{document}
