@@ -1,183 +1,108 @@
-%-------------------------
-% Resume in Latex - Jake's Resume Template (FAANG Optimized)
-% Candidate: Akash Sihol (Senior Quality Analyst & QA Lead)
-% Single-Page Engineered Layout
-%------------------------
-
-\documentclass[letterpaper,10pt]{article}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.45in]{geometry}
 \usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
+\usepackage{amssymb}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+% Suppress page numbering for strict 1-page layout
+\pagestyle{empty}
 
-% Adjust margins for guaranteed single-page layout
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Section formatting with clean horizontal rule matching reference
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\vspace{1.5pt}\hrule height 0.6pt]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
 
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
-
-% Ensure generated PDF is machine readable / ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-6pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-6pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-6pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tight list spacing matching reference
+\setlist[itemize]{leftmargin=1.25em, itemsep=1.2pt, topsep=1.5pt, parsep=0pt, partopsep=0pt}
 
 \begin{document}
 
-%----------HEADING----------
+% ==================== HEADER ====================
 \begin{center}
-    \textbf{\Huge \scshape Akash Sihol} \\ \vspace{2pt}
-    \small Senior Quality Analyst $|$ QA Team Lead $|$ Web, Mobile \& Enterprise Quality Engineering \\ \vspace{2pt}
-    \small +91-9380948319 $|$ \href{mailto:aksihol216@gmail.com}{\underline{aksihol216@gmail.com}} $|$ 
-    \href{https://aksihol.github.io}{\underline{Portfolio}} $|$
-    Kangra, Himachal Pradesh, India
+    {\fontsize{20pt}{24pt}\selectfont \textbf{Akash Sihol}}\\[3pt]
+    \small +91 9380948319 \ $|$ \ \href{mailto:aksihol216@gmail.com}{aksihol216@gmail.com} \ $|$ \ Kangra, Himachal Pradesh, India \ $|$ \ \href{https://aksihol.github.io}{Portfolio} \ $|$ \ \href{https://linkedin.com/in/}{LinkedIn}
 \end{center}
+\vspace{-6pt}
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Testing Methodologies}{: Functional, System Integration (SIT), UAT, Smoke \& Sanity, Regression, Retesting, Cross-Browser, Mobile QA} \\
-     \textbf{Automation \& AI Tools}{: AI Co-pilot (Test Case Generation), Playwright, Cypress, Selenium WebDriver, TestLink} \\
-     \textbf{Mobile \& API Testing}{: BrowserStack (Real iOS \& Android Devices), TestFlight, Postman (REST API validation), App Center} \\
-     \textbf{Management \& Platforms}{: JIRA (Defect Lifecycle \& Triage), Confluence, SQL, Spryker, Shopify, DevTools, Lighthouse, MS Excel}
-    }}
- \end{itemize}
- \vspace{-14pt}
+% ==================== TECHNICAL SKILLS ====================
+\section*{TECHNICAL SKILLS}
+\vspace{-1pt}
+\noindent
+\textbf{Testing Methodologies \& Types:} Functional, System Integration (SIT), UAT, Smoke \& Sanity, Regression, Retesting, Cross-Browser, Native Mobile QA, Black Box, E2E\\
+\textbf{Automation \& AI Tools:} AI Co-pilot (Test Authoring), Playwright, Cypress, Selenium WebDriver, TestLink, Charles Proxy\\
+\textbf{Mobile \& API Testing:} BrowserStack (Real iOS \& Android Devices), TestFlight, App Center, Postman (REST APIs), Chrome DevTools\\
+\textbf{Management, DB \& Platforms:} JIRA (Defect Lifecycle \& Bug Triage), Confluence, SQL (Data Integrity Verification), Spryker, Shopify, Lighthouse, MS Excel
+\vspace{-1pt}
 
-%-----------EXPERIENCE-----------
-\section{Professional Experience}
-  \resumeSubHeadingListStart
+% ==================== EXPERIENCE ====================
+\section*{EXPERIENCE}
 
-    \resumeSubheading
-      {Publicis Groupe}{Nov 2022 -- Present}
-      {Senior Quality Analyst / QA Team Lead}{Gurugram / Hybrid, India}
-      \resumeItemListStart
-        \resumeItem{\textbf{IFB Smart Mobile App (Aug 2026 -- Present):} Spearheaded iOS \& Android QA for connected IoT consumer app using BrowserStack real-device cloud, validating telemetry, offline sync, and device permissions across 40+ OS/device models.}
-        \resumeItem{\textbf{AI Co-pilot Test Authoring:} Accelerated test design velocity by 40\% leveraging AI Co-pilot for boundary and edge-case scenario generation; led weekly bug triage meetings with developers, shortening critical fix cycles by 30\%.}
-        \resumeItem{\textbf{HINCOL Web \& Mobile Platform (Oct 2025 -- Present):} Formulated master test plans and executed end-to-end SIT, regression, and smoke test suites for enterprise bitumen logistics workflows, achieving 99.8\% defect-free releases.}
-        \resumeItem{\textbf{Citro\"en Automobile Platform (Jul 2024 -- Apr 2026):} Directed QA governance for digital showroom, vehicle booking, and financing engines, conducting cross-browser, API, and UI/UX validation to ensure pixel-perfect brand compliance.}
-        \resumeItem{\textbf{Redington Enterprise B2B E-Commerce (Nov 2022 -- Dec 2023):} Led QA activities for high-throughput commercial platform, validating Advanced RFQ, ORC, dynamic bulk pricing, and stock allocation logic with Postman and SQL audits.}
-      \resumeItemListEnd
+\noindent
+\textbf{Senior Quality Analyst \& QA Lead} $|$ Publicis Digital Experience (Publicis Groupe) \hfill Nov 2022 -- Present\\
+\textit{Gurugram / Hybrid, India}\\[2pt]
+$\triangleright$ \textbf{Project: IFB — Smart Mobile App (iOS \& Android)} $|$ \textit{BrowserStack, AI Co-pilot, TestFlight, JIRA} \hfill \textbf{Aug 2026 -- Present}
+\begin{itemize}
+    \item Spearheaded native iOS \& Android mobile QA for connected IoT consumer app on BrowserStack real-device cloud, verifying telemetry, Bluetooth/WiFi sync, and device permissions across 40+ OS/device models.
+    \item Accelerated test case authoring by 40\% utilizing AI Co-pilot for edge cases; led weekly bug triage meetings with developers and PMs, cutting critical defect resolution turnaround by 30\%.
+\end{itemize}
 
-    \resumeSubheading
-      {QualiteSoft Technologies}{May 2019 -- Dec 2022}
-      {Senior Software Test Engineer}{Noida, India}
-      \resumeItemListStart
-        \resumeItem{\textbf{Freight Club Logistics Platform:} Engineered automated regression test suites using Selenium WebDriver with Java and custom XPath/CSS locators, shortening regression cycle execution by 45\% and eliminating critical rating bugs.}
-        \resumeItem{\textbf{Cymax E-Commerce Platform:} Executed full-lifecycle Black Box, functional, and payment gateway integration testing across multi-browser breakpoints for a high-volume North American furniture retail website.}
-        \resumeItem{\textbf{Database \& Defect Governance:} Authored robust SQL verification scripts to validate financial and shipment transactional data; reported and triaged 300+ defects in JIRA with comprehensive reproduction steps and execution logs.}
-      \resumeItemListEnd
+\vspace{1.5pt}
+\noindent
+$\triangleright$ \textbf{Project: HINCOL — Enterprise B2B Platform (Web \& Mobile)} $|$ \textit{Postman, JIRA, iOS, Android, Bitumen Logistics} \hfill \textbf{Wow@Work Award}
+\begin{itemize}
+    \item Formulated master test plans and executed multi-tier SIT, regression, and sanity suites for bitumen logistics and ERP modules, ensuring 99.8\% defect-free releases across production deployments.
+    \item Reviewed BRD/FRD requirements early in sprint cycles to eliminate scope ambiguity; conducted cross-platform native mobile testing with offline sync and field location tracking.
+\end{itemize}
 
-  \resumeSubHeadingListEnd
-  \vspace{-12pt}
+\vspace{1.5pt}
+\noindent
+$\triangleright$ \textbf{Project: Citro\"en — Automobile Digital Platform} $|$ \textit{BrowserStack, Postman, JIRA, DevTools, Lighthouse} \hfill \textbf{Employee of the Month}
+\begin{itemize}
+    \item Directed functional, regression, and cross-browser testing for vehicle booking, 3D digital showroom, and dealer discovery across 100+ responsive viewport breakpoints.
+    \item Collaborated with UI/UX designers and frontend engineers to enforce strict brand compliance and performance KPIs, achieving zero production bugs during national campaigns.
+\end{itemize}
 
-%-----------KEY PROJECTS & IMPACT-----------
-\section{Key Quality Engineering Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{IFB Connected Appliances Mobile Application} $|$ \emph{BrowserStack, AI Co-pilot, JIRA, iOS, Android}}{Aug 2026 -- Present}
-          \resumeItemListStart
-            \resumeItem{Engineered end-to-end test architecture for multi-appliance controls, diagnostic telemetry, and service scheduling workflows, achieving 100\% test coverage on critical release acceptance criteria.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Enterprise B2B E-Commerce \& RFQ Engine (Redington)} $|$ \emph{Postman, SQL, Spryker, Shopify, JIRA}}{Nov 2022 -- Dec 2023}
-          \resumeItemListStart
-            \resumeItem{Validated high-concurrency order placement and automated stock allocation, preventing inventory race conditions during peak transaction windows.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-    \vspace{-12pt}
+\vspace{1.5pt}
+\noindent
+$\triangleright$ \textbf{Project: Redington — Enterprise B2B E-Commerce} $|$ \textit{Spryker, Shopify, Postman, SQL, JIRA} \hfill \textbf{Excellence Premier League}
+\begin{itemize}
+    \item Governed end-to-end QA delivery for high-throughput commercial platform, validating Advanced RFQ, ORC, dynamic bulk pricing, and stock allocation logic under high concurrent order placement.
+    \item Validated RESTful APIs with Postman and executed complex SQL queries to verify transaction consistency, pricing rules, and inventory reservation integrity.
+\end{itemize}
 
-%-----------EDUCATION & CERTIFICATIONS-----------
-\section{Education \& Certifications}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Bachelor of Technology (B.Tech.) in Electronics and Communication Engineering}{Kangra, India}
-      {Undergraduate Engineering Degree}{Completed}
-  \resumeSubHeadingListEnd
-  \vspace{-5pt}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Certifications:}{ Cypress Automation Testing (Udemy Certified, Credential: UC-eb14920b) $|$ Selenium with Java Automation Testing}
-    }}
-  \end{itemize}
-  \vspace{-14pt}
+\vspace{3pt}
+\noindent
+\textbf{Senior Software Test Engineer} $|$ QualiteSoft Technologies \hfill May 2019 -- Dec 2022\\
+\textit{Noida, India}\\[2pt]
+$\triangleright$ \textbf{Project: Freight Club — Logistics Management Platform} $|$ \textit{Selenium WebDriver, Java, SQL, JIRA, TestLink}
+\begin{itemize}
+    \item Engineered automated regression test suites using Selenium WebDriver with Java and custom element locators (XPath/CSS), shortening execution cycles by 45\% and eliminating critical rating bugs.
+    \item Conducted extensive Black Box, functional, and SQL database verification for multi-carrier logistics routing engines and automated rate quote generation.
+\end{itemize}
 
-%-----------HONORS & AWARDS-----------
-\section{Honors \& Awards (Publicis Groupe)}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     $\bullet$ \textbf{WOW@WORK -- Collective Impact Award:} Recognized by executive leadership for outstanding team collaboration and release delivery. \\
-     $\bullet$ \textbf{Employee of the Month (October 2024):} Awarded through Publicis Groupe R\&R 2024 program for consistent high performance. \\
-     $\bullet$ \textbf{Excellence Premier League (Q2 2023):} Certificate of Appreciation for securing top standing in engineering quality.
-    }}
- \end{itemize}
+\vspace{1.5pt}
+\noindent
+$\triangleright$ \textbf{Project: Cymax — Retail E-Commerce Platform} $|$ \textit{Selenium WebDriver, SQL, Cross-Browser, Payment Gateways, JIRA}
+\begin{itemize}
+    \item Executed full-lifecycle functional, regression, and checkout payment gateway testing across multi-browser combinations for a high-volume North American furniture retail website.
+\end{itemize}
 
-%-------------------------------------------
+% ==================== EDUCATION ====================
+\section*{EDUCATION}
+\noindent
+\textbf{Himachal Pradesh Technical University (HPTU)} \hfill 2015 -- 2019\\
+Bachelor of Technology (B.Tech.) — Electronics and Communication Engineering \hfill \href{https://aksihol.github.io}{\textit{View Degree}}
+
+% ==================== CERTIFICATIONS ====================
+\section*{CERTIFICATIONS}
+\noindent
+Cypress Automation Testing — Udemy (Certificate: UC-eb14920b-ffe2-4d79-8024-497133105253) \hfill \href{https://aksihol.github.io}{\textit{Verify}}\\[1.5pt]
+Selenium with Java Automation Testing Certification — Certified Professional \hfill \href{https://aksihol.github.io}{\textit{Verify}}\\[1.5pt]
+WOW@WORK Collective Impact Award \& Employee of the Month (Oct 2024) — Publicis Groupe \hfill \href{https://aksihol.github.io}{\textit{View Award}}\\[1.5pt]
+Excellence Premier League Recognition (Q2 2023) — Publicis Groupe \hfill \href{https://aksihol.github.io}{\textit{View Award}}
+
 \end{document}
