@@ -19,7 +19,7 @@
 \input{glyphtounicode}
 
 %----------FONT----------
-\usepackage[default]{sourcesanspro}
+\IfFileExists{sourcesans.sty}{\usepackage[default]{sourcesans}}{\usepackage[default]{sourcesanspro}}
 \usepackage[T1]{fontenc}
 
 \pagestyle{fancy}
