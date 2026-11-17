@@ -338,6 +338,25 @@
       methodologies: ['Functional Testing', 'Regression Testing', 'Mobile App Testing (iOS & Android)', 'Smoke & Sanity', 'SIT', 'UAT Support'],
       tools: ['JIRA', 'Postman', 'BrowserStack', 'Lighthouse', 'MS Excel', 'Confluence']
     },
+    'ifb': {
+      title: 'IFB — Smart Home & Appliances Mobile App (iOS & Android)',
+      company: 'Publicis Groupe (Oct 2024 – Present)',
+      role: 'Senior Quality Analyst – Mobile',
+      overview: 'A smart IoT consumer mobile application for IFB Industries (a market leader in home appliances), empowering customers to monitor and control smart appliances, schedule technician visits, track warranty/maintenance, and purchase accessories across iOS and Android ecosystems.',
+      responsibilities: [
+        'Conducted thorough Requirement Review and Analysis of BRD/FRD documents and user stories, identifying test scope, edge cases, and potential risks early in the SDLC.',
+        'Accelerated Test Case Writing and scenario design utilizing AI Co-pilot, enhancing test coverage for boundary values, edge conditions, and complex user journeys.',
+        'Conducted structured peer Test Case Reviews with developers, UI/UX designers, and product owners to ensure strict alignment with acceptance criteria.',
+        'Executed extensive native iOS and Android application testing, validating core features, device permissions, push notifications, background/foreground state transitions, and offline sync.',
+        'Performed cross-platform and OS compatibility testing on real iOS and Android devices using BrowserStack across various screen sizes and OS versions.',
+        'Conducted rigorous Smoke and Sanity testing on build drops (TestFlight and Android APK builds) to swiftly validate build health before deeper test cycles.',
+        'Logged, tracked, and managed defects through the complete defect lifecycle using JIRA with detailed reproduction steps, logs, and video recordings.',
+        'Spearheaded regular Bug Triage sessions with developers and product managers to prioritize issues, analyze root causes, and expedite critical fix turnarounds.',
+        'Executed systematic ReTesting of fixed defects and performed comprehensive Regression Testing suites across release candidates to guarantee flawless production releases.'
+      ],
+      methodologies: ['Mobile App Testing (iOS & Android)', 'AI-Assisted Test Design', 'Smoke & Sanity Testing', 'Bug Triage & Defect Management', 'ReTesting & Regression', 'Requirement Analysis'],
+      tools: ['BrowserStack', 'JIRA', 'AI Co-pilot', 'TestFlight', 'Android Studio / App Center', 'Postman', 'Confluence']
+    },
     'citroen': {
       title: 'Citroën — Automobile Digital Platform',
       company: 'Publicis Groupe (Jul 2024 – Apr 2026)',
@@ -527,13 +546,13 @@
         printToTerminal('<strong>Core Testing Expertise:</strong><br>• Functional, SIT, UAT, Smoke & Sanity, Retesting, Regression, End-to-End Testing<br>• Automation: Playwright, Cypress, Selenium WebDriver<br>• API Testing: Postman (REST API validation)<br>• Database: SQL queries & data consistency verification<br>• Cross-Browser: BrowserStack, DevTools, Lighthouse');
         break;
       case 'tools':
-        printToTerminal('<strong>Tools & Tech Stack:</strong><br>Playwright · Cypress · Selenium WebDriver · Postman · JIRA · Confluence · TestLink · BrowserStack · SQL · Shopify · Spryker · Lighthouse · MS Excel');
+        printToTerminal('<strong>Tools & Tech Stack:</strong><br>AI Co-pilot · Playwright · Cypress · Selenium WebDriver · Postman · JIRA · Confluence · TestLink · BrowserStack · SQL · Shopify · Spryker · Lighthouse · MS Excel');
         break;
       case 'projects':
-        printToTerminal('<strong>Selected Projects:</strong><br>1. <span class="terminal-green">HINCOL</span> — Web & Mobile Platform (Bitumen & Infrastructure)<br>2. <span class="terminal-green">Citroën</span> — Automobile Digital Platform<br>3. <span class="terminal-green">Redington</span> — Enterprise B2B E-Commerce (RFQ & Stock Allocation)<br>4. <span class="terminal-green">Freight Club</span> — Logistics & Freight Shipping Management<br>5. <span class="terminal-green">Cymax</span> — Online Furniture Retail E-Commerce');
+        printToTerminal('<strong>Selected Projects:</strong><br>1. <span class="terminal-green">HINCOL</span> — Web & Mobile Platform (Bitumen & Infrastructure)<br>2. <span class="terminal-green">IFB</span> — Smart Mobile App (iOS & Android)<br>3. <span class="terminal-green">Citroën</span> — Automobile Digital Platform<br>4. <span class="terminal-green">Redington</span> — Enterprise B2B E-Commerce (RFQ & Stock Allocation)<br>5. <span class="terminal-green">Freight Club</span> — Logistics & Freight Shipping Management<br>6. <span class="terminal-green">Cymax</span> — Online Furniture Retail E-Commerce');
         break;
       case 'experience':
-        printToTerminal('<strong>Career History:</strong><br>• <strong>Publicis Groupe</strong> (Oct 2025 – Present): Senior Quality Analyst – Web & Mobile<br>• <strong>Publicis Groupe</strong> (Jul 2024 – Apr 2026): Senior QA<br>• <strong>Publicis Groupe</strong> (Nov 2022 – Dec 2023): QA Team Lead<br>• <strong>QualiteSoft</strong> (May 2019 – Dec 2022): Senior Software Test Engineer & Software Test Engineer');
+        printToTerminal('<strong>Career History:</strong><br>• <strong>Publicis Groupe</strong>: Senior Quality Analyst – Web & Mobile (HINCOL, IFB Mobile App, Citroën, Redington)<br>• <strong>QualiteSoft</strong> (May 2019 – Dec 2022): Senior Software Test Engineer & Software Test Engineer');
         break;
       case 'certifications':
         printToTerminal('<strong>Certifications & Education:</strong><br>• <strong>Selenium with Java</strong> Automation Testing Certification<br>• <strong>Cypress Automation Testing</strong> Certification<br>• <strong>Bachelor of Technology (B.Tech.)</strong> in Electronics & Communication Engineering');
@@ -614,7 +633,7 @@
 
   const paletteCommands = [
     { label: 'qa help', desc: 'Show all terminal commands', action: () => executeCommand('qa help') },
-    { label: 'qa projects', desc: 'Explore HINCOL, Citroën, Redington & more', action: () => { window.location.hash = '#experience'; } },
+    { label: 'qa projects', desc: 'Explore HINCOL, IFB, Citroën & more', action: () => { window.location.hash = '#experience'; } },
     { label: 'qa skills', desc: 'View testing competencies & automation tools', action: () => { window.location.hash = '#expertise'; } },
     { label: 'qa tools', desc: 'Filter Playwright, Cypress, Postman, JIRA', action: () => { window.location.hash = '#tools'; } },
     { label: 'qa resume', desc: 'Open printable ATS resume', action: () => window.open('./resume.html', '_blank') },
