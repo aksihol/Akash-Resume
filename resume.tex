@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex - Jake's Resume Template (FAANG Optimized)
+% Candidate: Akash Sihol (Senior Quality Analyst & QA Lead)
+% Single-Page Engineered Layout
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for guaranteed single-page layout
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure generated PDF is machine readable / ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Akash Sihol} \\ \vspace{2pt}
+    \small Senior Quality Analyst $|$ QA Team Lead $|$ Web, Mobile \& Enterprise Quality Engineering \\ \vspace{2pt}
+    \small +91-9380948319 $|$ \href{mailto:aksihol216@gmail.com}{\underline{aksihol216@gmail.com}} $|$ 
+    \href{https://aksihol.github.io}{\underline{Portfolio}} $|$
+    Kangra, Himachal Pradesh, India
+\end{center}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Testing Methodologies}{: Functional, System Integration (SIT), UAT, Smoke \& Sanity, Regression, Retesting, Cross-Browser, Mobile QA} \\
+     \textbf{Automation \& AI Tools}{: AI Co-pilot (Test Case Generation), Playwright, Cypress, Selenium WebDriver, TestLink} \\
+     \textbf{Mobile \& API Testing}{: BrowserStack (Real iOS \& Android Devices), TestFlight, Postman (REST API validation), App Center} \\
+     \textbf{Management \& Platforms}{: JIRA (Defect Lifecycle \& Triage), Confluence, SQL, Spryker, Shopify, DevTools, Lighthouse, MS Excel}
+    }}
+ \end{itemize}
+ \vspace{-14pt}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Publicis Groupe}{Nov 2022 -- Present}
+      {Senior Quality Analyst / QA Team Lead}{Gurugram / Hybrid, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{IFB Smart Mobile App (Aug 2026 -- Present):} Spearheaded iOS \& Android QA for connected IoT consumer app using BrowserStack real-device cloud, validating telemetry, offline sync, and device permissions across 40+ OS/device models.}
+        \resumeItem{\textbf{AI Co-pilot Test Authoring:} Accelerated test design velocity by 40\% leveraging AI Co-pilot for boundary and edge-case scenario generation; led weekly bug triage meetings with developers, shortening critical fix cycles by 30\%.}
+        \resumeItem{\textbf{HINCOL Web \& Mobile Platform (Oct 2025 -- Present):} Formulated master test plans and executed end-to-end SIT, regression, and smoke test suites for enterprise bitumen logistics workflows, achieving 99.8\% defect-free releases.}
+        \resumeItem{\textbf{Citro\"en Automobile Platform (Jul 2024 -- Apr 2026):} Directed QA governance for digital showroom, vehicle booking, and financing engines, conducting cross-browser, API, and UI/UX validation to ensure pixel-perfect brand compliance.}
+        \resumeItem{\textbf{Redington Enterprise B2B E-Commerce (Nov 2022 -- Dec 2023):} Led QA activities for high-throughput commercial platform, validating Advanced RFQ, ORC, dynamic bulk pricing, and stock allocation logic with Postman and SQL audits.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {QualiteSoft Technologies}{May 2019 -- Dec 2022}
+      {Senior Software Test Engineer}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Freight Club Logistics Platform:} Engineered automated regression test suites using Selenium WebDriver with Java and custom XPath/CSS locators, shortening regression cycle execution by 45\% and eliminating critical rating bugs.}
+        \resumeItem{\textbf{Cymax E-Commerce Platform:} Executed full-lifecycle Black Box, functional, and payment gateway integration testing across multi-browser breakpoints for a high-volume North American furniture retail website.}
+        \resumeItem{\textbf{Database \& Defect Governance:} Authored robust SQL verification scripts to validate financial and shipment transactional data; reported and triaged 300+ defects in JIRA with comprehensive reproduction steps and execution logs.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+%-----------KEY PROJECTS & IMPACT-----------
+\section{Key Quality Engineering Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{IFB Connected Appliances Mobile Application} $|$ \emph{BrowserStack, AI Co-pilot, JIRA, iOS, Android}}{Aug 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Engineered end-to-end test architecture for multi-appliance controls, diagnostic telemetry, and service scheduling workflows, achieving 100\% test coverage on critical release acceptance criteria.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Enterprise B2B E-Commerce \& RFQ Engine (Redington)} $|$ \emph{Postman, SQL, Spryker, Shopify, JIRA}}{Nov 2022 -- Dec 2023}
+          \resumeItemListStart
+            \resumeItem{Validated high-concurrency order placement and automated stock allocation, preventing inventory race conditions during peak transaction windows.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------EDUCATION & CERTIFICATIONS-----------
+\section{Education \& Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology (B.Tech.) in Electronics and Communication Engineering}{Kangra, India}
+      {Undergraduate Engineering Degree}{Completed}
+  \resumeSubHeadingListEnd
+  \vspace{-5pt}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Certifications:}{ Cypress Automation Testing (Udemy Certified, Credential: UC-eb14920b) $|$ Selenium with Java Automation Testing}
+    }}
+  \end{itemize}
+  \vspace{-14pt}
+
+%-----------HONORS & AWARDS-----------
+\section{Honors \& Awards (Publicis Groupe)}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     $\bullet$ \textbf{WOW@WORK -- Collective Impact Award:} Recognized by executive leadership for outstanding team collaboration and release delivery. \\
+     $\bullet$ \textbf{Employee of the Month (October 2024):} Awarded through Publicis Groupe R\&R 2024 program for consistent high performance. \\
+     $\bullet$ \textbf{Excellence Premier League (Q2 2023):} Certificate of Appreciation for securing top standing in engineering quality.
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
