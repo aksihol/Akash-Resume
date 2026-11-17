@@ -340,7 +340,7 @@
     },
     'ifb': {
       title: 'IFB — Smart Home & Appliances Mobile App (iOS & Android)',
-      company: 'Publicis Groupe (Oct 2024 – Present)',
+      company: 'Publicis Groupe (Aug 2026 – Present)',
       role: 'Senior Quality Analyst – Mobile',
       overview: 'A smart IoT consumer mobile application for IFB Industries (a market leader in home appliances), empowering customers to monitor and control smart appliances, schedule technician visits, track warranty/maintenance, and purchase accessories across iOS and Android ecosystems.',
       responsibilities: [
