@@ -1,5 +1,5 @@
 %-------------------------
-% Akash Sihol — Resume
+% Akash Sihol — Resume (2-Page FAANG-Standard Edition)
 % Based on Jake's Resume / sb2nov template (MIT License)
 % Compile with pdfLaTeX on Overleaf
 %-------------------------
@@ -22,19 +22,20 @@
 \IfFileExists{sourcesans.sty}{\usepackage[default]{sourcesans}}{\usepackage[default]{sourcesanspro}}
 \usepackage[T1]{fontenc}
 
+%----------PAGE NUMBERING / HEADERS----------
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\setlength{\footskip}{4.1pt}
+\setlength{\footskip}{12pt}
+\fancyfoot[C]{\small Page \thepage\ of 2}
 
-% Adjust margins matching reference
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.6in}
-\addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-0.65in}
-\addtolength{\textheight}{1.3in}
+% Adjust margins for balanced 2-page flow
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 \raggedbottom
@@ -43,8 +44,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % ATS parsable
 \pdfgentounicode=1
@@ -63,31 +64,22 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-6pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item\hspace{6pt}
     \begin{tabular*}{0.95\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-5pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
@@ -105,13 +97,23 @@
     \href{https://www.linkedin.com/in/akash-sihol}{\underline{LinkedIn}}
 \end{center}
 
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Results-driven Senior Quality Analyst \& QA Lead with \textbf{7+ years of experience} delivering robust software quality assurance, test automation, and release governance across Web, Mobile (iOS \& Android), and enterprise E-Commerce ecosystems. Proven track record leading distributed QA teams, architecting master test strategies, and spearheading zero-defect production releases for global brands including Publicis Groupe, IFB Industries, Citro{\"e}n, and HINCOL. Extensive technical expertise across Functional, System Integration (SIT), Regression, RESTful API testing (Postman), real-device mobile QA (BrowserStack), and modern test automation frameworks (Cypress, Playwright, Selenium WebDriver).
+    }}
+ \end{itemize}
+
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Testing \& Methodologies}{: Functional, System Integration (SIT), UAT, Smoke \& Sanity, Regression, Retesting, Cross-Browser, Native Mobile QA, E2E} \\
-     \textbf{Automation \& AI Tools}{: AI Co-pilot (Test Case Generation), Playwright, Cypress, Selenium WebDriver, Postman (REST APIs), TestLink} \\
-     \textbf{Platforms \& Management}{: JIRA (Defect Lifecycle \& Triage), BrowserStack (Real iOS \& Android), SQL, Spryker, Shopify, Lighthouse, DevTools}
+     \textbf{Testing Methodologies \& QA}{: Functional, System Integration Testing (SIT), UAT Support, Regression \& Retesting, Smoke \& Sanity, Cross-Browser \& Cross-Platform, End-to-End (E2E), Black Box Testing} \\
+     \textbf{Automation \& Scripting}{: AI Co-pilot (Test Case \& Edge-Case Generation), Cypress, Playwright, Selenium WebDriver with Java, XPath \& CSS Selectors, TestNG, JavaScript} \\
+     \textbf{API \& Backend Validation}{: Postman (REST API Collections, Environment Variables, Pre-request Scripts), SQL (Complex Joins, Data Validation, Transaction Integrity), JSON/XML Data Payloads} \\
+     \textbf{Mobile \& IoT QA}{: Native iOS \& Android QA, BrowserStack (Real Device Cloud), TestFlight, Android Studio (Logcat, APK Testing), Push Notifications, Offline Sync, Device Permissions} \\
+     \textbf{Platforms \& Collaboration}{: JIRA (Defect Lifecycle, Sprint Boards, Bug Triage), Spryker Framework, Shopify, TestLink, Confluence, Git/GitHub, Chrome DevTools, Lighthouse}
     }}
  \end{itemize}
 
@@ -125,54 +127,84 @@
 
       \vspace{-2pt}
       \resumeProjectHeading
-          {$\triangleright$\ \textbf{Project: IFB --- Smart Mobile App (iOS \& Android)} $|$ \emph{BrowserStack, AI Co-pilot, TestFlight, JIRA}}{}
+          {$\triangleright$\ \textbf{Project: IFB --- Smart Mobile App (iOS \& Android)} $|$ \emph{BrowserStack, AI Co-pilot, TestFlight, Android Studio, JIRA}}{}
       \resumeItemListStart
-        \resumeItem{Spearheaded native iOS \& Android mobile QA for connected IoT consumer app on \textbf{BrowserStack} real-device cloud, verifying telemetry, offline sync, and device permissions across \textbf{40+ OS/device models}.}
-        \resumeItem{Accelerated test design velocity by \textbf{40\%} utilizing \textbf{AI Co-pilot} for edge cases; led weekly bug triage meetings with developers and PMs, cutting critical defect resolution turnaround by \textbf{30\%}.}
+        \resumeItem{Spearheaded native iOS \& Android mobile QA for connected IoT consumer application across \textbf{40+ real device models} on \textbf{BrowserStack}, verifying Bluetooth/Wi-Fi telemetry, diagnostic alerts, and appliance controls.}
+        \resumeItem{Accelerated test authoring velocity by \textbf{40\%} utilizing \textbf{AI Co-pilot} for boundary-value and edge-case generation, expanding test coverage across multi-state appliance pairing and background sync.}
+        \resumeItem{Conducted structured Smoke and Sanity validation on weekly build drops (TestFlight and Android APKs), identifying blocking defects early and reducing release-candidate regression turnaround by \textbf{35\%}.}
+        \resumeItem{Chaired bi-weekly defect triage meetings with engineering leads and PMs in JIRA; instituted root-cause tracking that reduced critical defect escape rates to \textbf{zero in production}.}
       \resumeItemListEnd
 
       \resumeProjectHeading
           {$\triangleright$\ \textbf{Project: HINCOL --- Enterprise B2B Platform (Web \& Mobile)} $|$ \emph{Postman, JIRA, Android, iOS, Agile}}{\href{https://aksihol.github.io/Akash-Resume/assets/wow-at-work-akash-sihol.png}{\underline{\textbf{Wow@Work Award}}}}
       \resumeItemListStart
-        \resumeItem{Formulated master test strategies and executed SIT, regression, and sanity suites for bitumen logistics and ERP modules, ensuring \textbf{99.8\% defect-free releases} across production deployments.}
-        \resumeItem{Partnered with developers in Agile sprints to eliminate requirement ambiguities early via BRD/FRD reviews; validated native mobile field workflows with offline data sync.}
+        \resumeItem{Architected master test strategies and executed end-to-end SIT, regression, and sanity suites for enterprise bitumen logistics and ERP modules, ensuring \textbf{99.8\% defect-free releases} across scheduled deployments.}
+        \resumeItem{Validated native Android and iOS field representative mobile applications, verifying GPS tracking, offline transaction caching, and multi-tenant plant dispatch workflows under unstable network conditions.}
+        \resumeItem{Executed automated and manual REST API collections using \textbf{Postman} to validate complex commercial pricing formulas, quotation workflows, and customer credit checks against backend microservices.}
+        \resumeItem{Honored with the corporate \textbf{WOW@WORK Collective Impact Award} for cross-functional collaboration and upholding uncompromising quality standards during enterprise modernization.}
       \resumeItemListEnd
 
       \resumeProjectHeading
           {$\triangleright$\ \textbf{Project: Citro{\"e}n --- Automobile Digital Customer Platform} $|$ \emph{BrowserStack, Postman, JIRA, DevTools}}{\href{https://aksihol.github.io/Akash-Resume/assets/employee-of-the-month.jpeg}{\underline{\textbf{Employee of the Month}}}}
       \resumeItemListStart
-        \resumeItem{Directed functional, regression, and cross-browser testing for vehicle booking, 3D digital showroom, and dealer discovery across \textbf{100+ responsive viewport breakpoints}.}
-        \resumeItem{Collaborated with UI/UX designers and frontend engineers to enforce strict brand compliance and performance KPIs, achieving \textbf{zero production bugs} during national campaigns.}
+        \resumeItem{Directed functional, regression, and cross-browser testing for high-traffic customer portal, validating online car booking, 3D digital showroom configurators, and dealer locators across \textbf{100+ responsive breakpoints}.}
+        \resumeItem{Collaborated with UI/UX designers and frontend engineers to enforce strict brand compliance, accessibility standards, and Core Web Vitals, achieving \textbf{zero production bugs} during national advertising campaigns.}
+        \resumeItem{Validated geolocation dealer discovery and service booking APIs via \textbf{Postman}, verifying sub-second response times and transactional consistency under simulated peak booking traffic.}
+        \resumeItem{Recognized as \textbf{Employee of the Month (October 2024)} across Publicis Groupe for outstanding QA delivery, thorough release verification, and consistent sprint velocity.}
       \resumeItemListEnd
 
       \resumeProjectHeading
           {$\triangleright$\ \textbf{Project: Redington --- Enterprise B2B E-Commerce Platform} $|$ \emph{Spryker, Shopify, Postman, SQL, JIRA}}{\href{https://aksihol.github.io/Akash-Resume/assets/excellence-premier-league.jpeg}{\underline{\textbf{Excellence Award}}}}
       \resumeItemListStart
-        \resumeItem{Governed end-to-end QA delivery for high-throughput commercial platform, validating Advanced RFQ, ORC, dynamic bulk pricing, and stock allocation logic under high concurrent order placement.}
-        \resumeItem{Validated RESTful APIs with Postman and executed complex SQL queries to guarantee transaction consistency, catalog pricing rules, and inventory reservation integrity.}
+        \resumeItem{Governed end-to-end QA delivery for high-throughput commercial marketplace, validating Advanced RFQ, Order Routing \& Confirmation (ORC), dynamic tiered B2B pricing, and multi-warehouse stock allocation logic.}
+        \resumeItem{Formulated and executed complex \textbf{SQL queries} across relational tables to audit transaction integrity, catalog pricing rules, and inventory reservation consistency during high-concurrency order placement.}
+        \resumeItem{Conducted extensive API integration testing with \textbf{Postman}, validating ERP synchronization, payment gateway webhooks, and third-party logistics dispatch notifications.}
+        \resumeItem{Awarded the \textbf{Excellence Premier League (Q2 2023)} certificate of appreciation for driving quality excellence and leading zero-defect commercial release milestones.}
       \resumeItemListEnd
 
-    \vspace{4pt}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\newpage % Clean Page 2 Break
+%-------------------------------------------
+
+%-----------EXPERIENCE (CONTINUED)-----------
+\section{Experience (Continued)}
+  \resumeSubHeadingListStart
+
     \resumeSubheading
       {Senior Software Test Engineer $|$ \textit{\textnormal{QualiteSoft Technologies}}}{May 2019 -- Oct 2022}
       {Noida, India}{}
 
       \vspace{-2pt}
       \resumeProjectHeading
-          {$\triangleright$\ \textbf{Project: Freight Club --- Logistics Management Platform} $|$ \emph{Selenium WebDriver, Java, SQL, JIRA, TestLink}}{}
+          {$\triangleright$\ \textbf{Project: Freight Club --- Logistics Management Platform} $|$ \emph{Selenium WebDriver, Java, SQL, JIRA, TestLink, TestNG}}{}
       \resumeItemListStart
-        \resumeItem{Engineered automated regression suites using \textbf{Selenium WebDriver} with Java and custom locators, cutting regression run cycles by \textbf{45\%} across North American retail platforms.}
-        \resumeItem{Conducted full-lifecycle functional, payment gateway, and SQL database verification for logistics carrier rating engines and high-volume e-commerce checkout flows.}
+        \resumeItem{Engineered automated regression test suites using \textbf{Selenium WebDriver} with Java, custom XPath/CSS locators, and TestNG, reducing manual regression test execution cycles by \textbf{45\%} across platform releases.}
+        \resumeItem{Conducted comprehensive functional, boundary, and system integration testing for multi-carrier rating engines, bill of lading (BOL) generation, and real-time shipment dispatch tracking.}
+        \resumeItem{Executed relational \textbf{SQL queries} to validate shipping rate calculations, database integrity, and carrier contract business rules across high-volume North American merchant transactions.}
+        \resumeItem{Authored and maintained comprehensive test execution matrices, bug reports, and daily execution status dashboards in TestLink and JIRA, standardizing reporting for cross-functional engineering teams.}
       \resumeItemListEnd
 
       \resumeProjectHeading
-          {$\triangleright$\ \textbf{Project: Cymax --- Online Retail E-Commerce Platform} $|$ \emph{Selenium WebDriver, SQL, Cross-Browser, Payment Gateways}}{}
+          {$\triangleright$\ \textbf{Project: Cymax --- Online Retail E-Commerce Platform} $|$ \emph{Selenium WebDriver, SQL, Cross-Browser, Payment Gateways, JIRA}}{}
       \resumeItemListStart
-        \resumeItem{Executed comprehensive Black Box, functional, and checkout payment gateway testing across multi-browser breakpoints for a high-volume North American furniture retail website.}
-        \resumeItem{Authored and maintained 200+ detailed test scenarios in JIRA covering catalog filters, promo code validation, and order fulfillment verification with the engineering team.}
+        \resumeItem{Executed comprehensive Black Box, functional, and checkout payment gateway testing across multi-browser breakpoints for a high-volume North American furniture retail website serving millions of customers.}
+        \resumeItem{Authored and maintained 200+ detailed test scenarios in JIRA covering product catalog search, category filters, promo code validation, cart persistence, and payment processor integrations (PayPal, Credit Card, Affirm).}
+        \resumeItem{Automated core customer checkout journeys using \textbf{Selenium WebDriver}, integrating automated sanity checks into pre-deployment verification cycles.}
+        \resumeItem{Partnered with distributed engineering teams in bi-weekly sprint planning, defect scrub sessions, and retrospective reviews to enforce strict adherence to product acceptance criteria.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+
+%-----------QA LEADERSHIP & DELIVERY HIGHLIGHTS-----------
+\section{QA Leadership \& Delivery Governance}
+  \resumeItemListStart
+    \resumeItem{\textbf{Test Strategy \& Governance}{: Authored standardized Master Test Plans (MTP), Defect Triage protocols, and Release Readiness criteria adopted across 4 concurrent enterprise client engagements at Publicis Groupe.}}
+    \resumeItem{\textbf{Agile Quality Engineering}{: Championed shift-left testing methodologies within Agile/Scrum ceremonies, participating in user story grooming, sprint planning, and acceptance criteria definition to catch ambiguities early.}}
+    \resumeItem{\textbf{Defect Management Lifecycle}{: Managed end-to-end defect tracking in JIRA, establishing structured severity/priority classification, detailed reproduction logs, and root-cause analysis that slashed defect turnaround by \textbf{30\%}.}}
+    \resumeItem{\textbf{Team Mentorship \& Collaboration}{: Mentored junior QA engineers in test design techniques, boundary-value analysis, API validation with Postman, and real-device mobile QA workflows.}}
+  \resumeItemListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -182,12 +214,12 @@
       {Bachelor of Technology (B.Tech.) --- Electronics and Communication Engineering}{}
   \resumeSubHeadingListEnd
 
-%-----------CERTIFICATIONS-----------
+%-----------CERTIFICATIONS & RECOGNITION-----------
 \section{Certifications \& Awards}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-       Cypress Automation Testing --- Udemy & \href{https://aksihol.github.io/Akash-Resume/assets/cypress-certificate.jpeg}{\underline{View Certificate}} \\
+       Cypress Automation Testing --- Udemy Certificate of Completion & \href{https://aksihol.github.io/Akash-Resume/assets/cypress-certificate.jpeg}{\underline{View Certificate}} \\
        Selenium with Java Automation Testing --- Certified Professional & \\
        WOW@WORK Collective Impact Award --- Publicis Groupe & \href{https://aksihol.github.io/Akash-Resume/assets/wow-at-work-akash-sihol.png}{\underline{View Award}} \\
        Employee of the Month (October 2024) --- Publicis Groupe & \href{https://aksihol.github.io/Akash-Resume/assets/employee-of-the-month.jpeg}{\underline{View Award}} \\
