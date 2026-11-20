@@ -358,20 +358,21 @@
       tools: ['BrowserStack', 'JIRA', 'AI Co-pilot', 'TestFlight', 'Android Studio / App Center', 'Postman', 'Confluence']
     },
     'citroen': {
-      title: 'Citroën — Automobile Digital Platform',
+      title: 'Citroën — Automobile Digital Portal & DMS',
       company: 'Publicis Groupe (Jul 2024 – Apr 2026)',
       role: 'Senior QA',
-      overview: 'A premium, high-traffic digital customer portal for Citroën India, providing customers with seamless vehicle discovery, custom 3D digital showroom, price comparison, online booking, service appointment scheduling, and dealer locator.',
+      overview: 'A premium, high-traffic digital customer portal and backend Dealer Management System (DMS) for Citroën India, providing customers with seamless vehicle discovery, custom 3D digital showroom, online booking, and enabling dealerships with streamlined quotation generation, sales pipeline tracking, and customer lead management.',
       responsibilities: [
-        'Conducted comprehensive end-to-end quality assurance ensuring strict adherence to global automotive brand standards and performance KPIs.',
-        'Performed Functional, Retesting, Regression, and Cross-Browser Testing across desktop, tablet, and mobile breakpoints.',
+        'Performed comprehensive testing on the Dealer Management System (DMS) platform for Quotation, Sales, and Lead management workflows.',
+        'Executed end-to-end System Integration Testing (SIT) between the customer-facing Digital Portal (DP) and backend Dealer Management System (DMS) to validate real-time lead routing and quotation synchronization.',
+        'Conducted Functional, Retesting, Regression, and Cross-Browser Testing across desktop, tablet, and mobile breakpoints (100+ viewports).',
         'Collaborated closely with UI/UX designers and frontend engineers to ensure pixel-perfect brand alignment and interactive fidelity.',
         'Engineered detailed test scenarios and test cases for the dealer locator, financing calculators, promotional offers, and car configuration workflows.',
         'Communicated testing progress, blockers, release risks, and test coverage metrics in weekly stakeholder governance meetings.',
         'Executed stringent regression testing before each major release cycle, preventing regressions in production.'
       ],
-      methodologies: ['Functional Testing', 'UI/UX Testing', 'Cross-Browser Testing', 'Retesting', 'Regression Testing', 'End-to-End Testing'],
-      tools: ['BrowserStack', 'JIRA', 'Postman', 'Chrome DevTools', 'Confluence', 'Lighthouse']
+      methodologies: ['DMS Testing', 'Integration Testing (DP-DMS)', 'Functional Testing', 'UI/UX Testing', 'Cross-Browser Testing', 'Retesting', 'Regression Testing'],
+      tools: ['DMS Platform', 'BrowserStack', 'JIRA', 'Postman', 'Chrome DevTools', 'Confluence', 'Lighthouse']
     },
     'redington': {
       title: 'Redington — Enterprise B2B E-Commerce Platform',
